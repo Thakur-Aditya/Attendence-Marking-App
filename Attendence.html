@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendence Marking App</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+      .footer {
+        text-align: right;
+        width: 100%;
+      }
+      table {
+        border-collapse: collapse;
+        border: 2px solid rgb(140 140 140);
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+      }
+
+      caption {
+        caption-side: bottom;
+        padding: 10px;
+        font-weight: bold;
+      }
+
+      thead,
+      tfoot {
+        background-color: rgb(228 240 245);
+      }
+
+      th,
+      td {
+        border: 1px solid rgb(160 160 160);
+        padding: 8px 10px;
+      }
+
+      td:last-of-type {
+        text-align: center;
+      }
+
+      tbody > tr:nth-of-type(even) {
+        background-color: rgb(237 238 242);
+      }
+
+      tfoot th {
+        text-align: right;
+      }
+
+      tfoot td {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ATTENDENCE MARKING APP</h1>
+    <h2>BALLB - 4A</h2>
+    <div class="counter">
+      <!-- hitwebcounter Code START -->
+      <p>You are visitor number</p>
+      <img src="https://hitwebcounter.com/counter/counter.php?page=11447281&style=0006&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /> 
+    </div>
+
+    <table>
+      <caption>
+        Submit today's Attendence
+        <button class="submit">Submit</button>
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Enrolment Number</th>
+          <th scope="col">Student Name</th>
+          <th scope="col">Present</th>
+          <th scope="col">Absent</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">00151103820</th>
+          <td class="name">AARAV RAJ</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence1" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence1" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">00251103820</th>
+          <td class="name">AASHISH KUMAR ARYA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence2" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence2" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">00351103820</th>
+          <td class="name">ABHISHEK MISHRA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence3" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence3" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">00451103820</th>
+          <td class="name">ADHIRAAJ ROY</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence4" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence4" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">00551103820</th>
+          <td class="name">ADITYA CHAUHAN</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence5" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence5" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">00651103820</th>
+          <td class="name">ADITYA KHARI</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence6" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence6" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">00751103820</th>
+          <td class="name">ADITYA NEGI</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence7" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence7" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">00851103820</th>
+          <td class="name">ADITYA RAJ KASHYAP</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence8" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence8" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">00951103820</th>
+          <td class="name">ADITYA SINGH</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence9" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence9" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">01151103820</th>
+          <td class="name">AJAY AHUJA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence11" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence11" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">01251103820</th>
+          <td class="name">AKASH TIWARI</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence12" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence12" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">01351103820</th>
+          <td class="name">ALTAF RAJA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence13" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence13" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">01451103820</th>
+          <td class="name">ANADI SALWAN</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence14" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence14" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">01551103820</th>
+          <td class="name">ANANYA CHAUBEY</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence15" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence15" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">01751103820</th>
+          <td class="name">ANUJ ANAND</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence17" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence17" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">01851103820</th>
+          <td class="name">ANURAG TIWARI</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence18" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence18" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">01951103820</th>
+          <td class="name">ANUSHKA MAMGAIN</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence19" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence19" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">02051103820</th>
+          <td class="name">ANUSHKA RASTOGI</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence20" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence20" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">02151103820</th>
+          <td class="name">ASHWINT SINGH</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence21" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence21" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">02251103820</th>
+          <td class="name">ASMITA GAUTAM</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence22" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence22" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">02351103820</th>
+          <td class="name">AYUSH JUYAL</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence23" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence23" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">02451103820</th>
+          <td class="name">AYUSH PRATAP SINGH</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence24" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence24" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">02551103820</th>
+          <td class="name">AYUSHI</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence25" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence25" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">02651103820</th>
+          <td class="name">BHUMIKA BATRA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence26" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent <input type="radio" name="attendence26 checked
+              class="absent"/>
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">02751103820</th>
+          <td class="name">BUNTY VERMA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence27" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence27" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">02851103820</th>
+          <td class="name">DARSHIKA VAISHLA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence28" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence28" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">02951103820</th>
+          <td class="name">DEBADITYA DUTTA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence29" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence29" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">03051103820</th>
+          <td class="name">DEV PAWAR</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence30" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence30" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">03151103820</th>
+          <td class="name">DEVANSHI CHAUDHARY</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence31" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence31" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">03251103820</th>
+          <td class="name">DEVANSHI SRIVASTAVA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence32" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence32" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">03351103820</th>
+          <td class="name">DHEERAJ KUMAR NAG</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence33" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence33" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">03451103820</th>
+          <td class="name">DHRITI BHATI</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence34" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence34" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">03551103820</th>
+          <td class="name">DHRUV SAGAR</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence35" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence35" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">03651103820</th>
+          <td class="name">DHRUV SINGH</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence36" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence36" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">03751103820</th>
+          <td class="name">DIPPRA PATHAK</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence37" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence37" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">03851103820</th>
+          <td class="name">DRISHTY DUREJA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence38" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence38" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">03951103820</th>
+          <td class="name">EKTA RAI</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence39" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence39" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">04051103820</th>
+          <td class="name">ESHIKA SHARMA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence40" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence40" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">04151103820</th>
+          <td class="name">GARGI VASHISTH</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence41" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence41" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">04251103820</th>
+          <td class="name">GARIMA BAJAJ</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence42" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence42" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">04351103820</th>
+          <td class="name">GAURANG SINGH BHATI</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence43" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence43" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">04451103820</th>
+          <td class="name">GAURAV JAGGI</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence44" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence44" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">04551103820</th>
+          <td class="name">GAURI KAPOOR</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence45" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence45" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">04651103820</th>
+          <td class="name">GAUTAM VERMA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence46" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence46" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">04751103820</th>
+          <td class="name">GEETIKA VERMA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence47" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence47" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">04851103820</th>
+          <td class="name">GURNEET SINGH</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence48" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence48" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">04951103820</th>
+          <td class="name">HARDAY SINGH KARKI</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence49" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence49" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">05051103820</th>
+          <td class="name">HARDEEP KAUR</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence50" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence50" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">05151103820</th>
+          <td class="name">HARSH KUMAR</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence51" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence51" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">05251103820</th>
+          <td class="name">HARSH RATHEE</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence52" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence52" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">05351103820</th>
+          <td class="name">HARSHIT GAUTAM</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence53" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence53" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">05451103820</th>
+          <td class="name">HARSHIT KUMAR TIWARI</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence54" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence54" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">05551103820</th>
+          <td class="name">HARSHITA KHANDELWAL</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence55" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence55" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">05651103820</th>
+          <td class="name">HEENA SHARMA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence56" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence56" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">05751103820</th>
+          <td class="name">JANHVI SINGH</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence57" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence57" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">05851103820</th>
+          <td class="name">JYADITYA DOGRA</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence58" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence58" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">05951103820</th>
+          <td class="name">JYOTIRMAYA NEGI</td>
+          <td>
+            <label>
+              Present
+              <input type="radio" name="attendence59" class="present" />
+            </label>
+          </td>
+          <td>
+            <label>
+              Absent
+              <input type="radio" name="attendence59" checked class="absent" />
+            </label>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Total Students</th>
+          <td class="totalStudents">57 - out of which</td>
+          <td class="totalPresent">0</td>
+          <td class="totalAbsent">0</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="presentStudentList">
+      <h2>List of students which are present</h2>
+      <p id="datetime"></p>
+    </div>
+    <div class="absentStudentList" id="abstu">
+      <h2>List of students which are Absent</h2>
+    </div>
+
+    <div class="footer">
+      <hr />
+      <b><p>&copy; MADE BY ADITYA SINGH</p></b>
+      <p>
+        CONTACT ME -
+        <a href="https://www.linkedin.com/in/aditya-singh-sengar/"
+          >sengaraditya01@gmail.com</a
+        >
+        <!-- <p> PHONE NUMBER - +91 7703977938</p> -->
+      </p>
+    </div>
+    <script>
+      var now = new Date();
+      var datetime = now.toLocaleString();
+
+      // Insert date and time into HTML
+      document.getElementById("datetime").innerHTML = datetime;
+      let presentStudentList = document.querySelector(".presentStudentList");
+      let absentStudentList = document.querySelector(".absentStudentList");
+      let totalP = document.querySelector(".totalPresent");
+      let totalA = document.querySelector(".totalAbsent");
+      const submitBtn = document.querySelector(".submit");
+
+      // const copyAbsentBtn = document.querySelector(".copyAbsent");
+      // copyAbsentBtn.addEventListener("click" , () => {
+      //   var copytext = document.getElementsByClassName("absentStudentList");
+      //   copytext[0].select();
+      //   copytext.setSelectionRange(0,99999);
+      //   navigator.clipboard.writeText(copytext.value);
+      //   alert("Copied the text: " + copyText.value);
+      // });
+
+      submitBtn.addEventListener("click", (event) => {
+        let present = [];
+        let absent = [];
+        let collection = document.querySelectorAll(".present");
+        collection.forEach((element) => {
+          if (element.checked === true) {
+            present.push(
+              element.parentElement.parentElement.previousElementSibling
+            );
+          } else {
+            absent.push(
+              element.parentElement.parentElement.previousElementSibling
+            );
+          }
+        });
+        totalP.innerText = present.length;
+        totalA.innerText = absent.length;
+        for (pre of present) {
+          let newp = document.createElement("p");
+          newp.innerText = pre.innerHTML;
+          presentStudentList.append(newp);
+        }
+
+        for (ab of absent) {
+          let newpp = document.createElement("p");
+          newpp.innerText = ab.innerText;
+          absentStudentList.append(newpp);
+        }
+      });
+    </script>
+  </body>
+</html>
